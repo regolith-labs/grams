@@ -21,6 +21,7 @@ default = []
 grams-api.workspace = true
 ore-lst-api.workspace = true
 solana-program.workspace = true
+solana-security-txt.workspace = true
 spl-token.workspace = true
 spl-associated-token-account.workspace = true
 steel.workspace = true
