@@ -1,14 +1,12 @@
 # Grams
 
-Permissionless burn vault for ORE tokens.
-
-Users can send memecoins to this address to permanently lock the supply:
+Users can send ORE commmunity memecoins to this address to permanently lock the supply:
 
 ```
 GHRBYPA4cujFwfyhNNm6NLTh4egdTrcz7xkBbEwM4xX
 ```
 
-Any ORE or stORE tokens received by the contract (e.g. via rebates earned on Stonksfun, OTC, or Pumpfun platforms) will be automatically buried.
+Any ORE or stORE received by the contract (e.g. via rebates earned on Stonksfun, OTC, or Pumpfun platforms) will be automatically buried.
 
 Anyone can call `unwrap` + `bury` to convert stORE into ORE and burn all ORE in the vault.
 
