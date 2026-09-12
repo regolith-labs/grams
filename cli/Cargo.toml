@@ -1,0 +1,24 @@
+[package]
+name = "grams-cli"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+homepage.workspace = true
+documentation.workspace = true
+repository.workspace = true
+keywords.workspace = true
+publish = false
+
+[features]
+default = []
+
+[dependencies]
+anyhow.workspace = true
+grams-api = { path = "../api" }
+solana-client.workspace = true
+solana-sdk.workspace = true
+solana-program.workspace = true
+spl-token.workspace = true
+spl-associated-token-account.workspace = true
+steel.workspace = true
+tokio.workspace = true

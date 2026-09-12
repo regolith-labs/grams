@@ -1,0 +1,161 @@
+{
+    "version": "0.1.0",
+    "name": "grams",
+    "instructions": [
+        {
+            "name": "bury",
+            "discriminant": {
+                "type": "u8",
+                "value": 0
+            },
+            "docs": [
+                "Burns all ORE in the receivables ATA. Permissionless.",
+                "Receivables PDA seeds: [\"receivables\"]."
+            ],
+            "accounts": [
+                {
+                    "name": "receivables",
+                    "isMut": false,
+                    "isSigner": false
+                },
+                {
+                    "name": "receivablesOre",
+                    "isMut": true,
+                    "isSigner": false
+                },
+                {
+                    "name": "mint",
+                    "isMut": true,
+                    "isSigner": false,
+                    "address": "oreoU2P8bN6jkk3jbaiVxYnG1dCXcYxwhwyK9jSybcp"
+                },
+                {
+                    "name": "tokenProgram",
+                    "isMut": false,
+                    "isSigner": false,
+                    "address": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+                }
+            ],
+            "args": []
+        },
+        {
+            "name": "unwrap",
+            "discriminant": {
+                "type": "u8",
+                "value": 1
+            },
+            "docs": [
+                "Unwraps all stORE in the receivables ATA into ORE via CPI to ore-lst. Permissionless.",
+                "Receivables PDA seeds: [\"receivables\"]."
+            ],
+            "accounts": [
+                {
+                    "name": "payer",
+                    "isMut": true,
+                    "isSigner": true
+                },
+                {
+                    "name": "receivables",
+                    "isMut": true,
+                    "isSigner": false
+                },
+                {
+                    "name": "receivablesOre",
+                    "isMut": true,
+                    "isSigner": false
+                },
+                {
+                    "name": "receivablesStore",
+                    "isMut": true,
+                    "isSigner": false
+                },
+                {
+                    "name": "oreMint",
+                    "isMut": true,
+                    "isSigner": false,
+                    "address": "oreoU2P8bN6jkk3jbaiVxYnG1dCXcYxwhwyK9jSybcp"
+                },
+                {
+                    "name": "storeMint",
+                    "isMut": true,
+                    "isSigner": false,
+                    "address": "storenSbvkfzircixnaosc5CbzNZVrHJ6S3EKrS1yqR"
+                },
+                {
+                    "name": "stake",
+                    "isMut": true,
+                    "isSigner": false
+                },
+                {
+                    "name": "stakeTokens",
+                    "isMut": true,
+                    "isSigner": false
+                },
+                {
+                    "name": "treasury",
+                    "isMut": true,
+                    "isSigner": false
+                },
+                {
+                    "name": "treasuryTokens",
+                    "isMut": true,
+                    "isSigner": false
+                },
+                {
+                    "name": "vault",
+                    "isMut": true,
+                    "isSigner": false
+                },
+                {
+                    "name": "vaultTokens",
+                    "isMut": true,
+                    "isSigner": false
+                },
+                {
+                    "name": "vesting",
+                    "isMut": true,
+                    "isSigner": false
+                },
+                {
+                    "name": "systemProgram",
+                    "isMut": false,
+                    "isSigner": false,
+                    "address": "11111111111111111111111111111111"
+                },
+                {
+                    "name": "tokenProgram",
+                    "isMut": false,
+                    "isSigner": false,
+                    "address": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+                },
+                {
+                    "name": "associatedTokenProgram",
+                    "isMut": false,
+                    "isSigner": false,
+                    "address": "ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL"
+                },
+                {
+                    "name": "oreStakeProgram",
+                    "isMut": false,
+                    "isSigner": false,
+                    "address": "STkEAu2cEyQp5ktgUauRVq8es6mEP2w6ixw4NEd5tDJ"
+                },
+                {
+                    "name": "oreLstProgram",
+                    "isMut": false,
+                    "isSigner": false,
+                    "address": "storeD7bEkywTTMrje19WRoyrkEhbhrvyjVnLxWih6a"
+                }
+            ],
+            "args": []
+        }
+    ],
+    "accounts": [],
+    "types": [],
+    "events": [],
+    "errors": [],
+    "metadata": {
+        "address": "gram5fpWcCWgE65u3DGKncvnxKqFPdbeRZqQg9joE8L",
+        "origin": "steel"
+    }
+}
