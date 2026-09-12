@@ -8,8 +8,6 @@ GHRBYPA4cujFwfyhNNm6NLTh4egdTrcz7xkBbEwM4xX
 
 Any ORE or stORE received by the contract (e.g. via rebates earned on Stonksfun, OTC, or Pumpfun platforms) will be automatically buried.
 
-Anyone can call `unwrap` + `bury` to convert stORE into ORE and burn all ORE in the vault.
-
 ## Program
 
 - [`Bury`](program/src/bury.rs) – Burns all ORE in the receivables ATA.
